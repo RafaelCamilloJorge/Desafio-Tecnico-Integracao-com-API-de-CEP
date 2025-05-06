@@ -39,17 +39,12 @@ npm install
 npm run start:dev
 ```
 
-### Passo 4: Rodando Localmente
-```bash
-npm run dev
-```
-
-### Passo 5: Acessando a API
+### Passo 4: Acessando a API
 Exemplo de Requisição:
 
 GET http://localhost:3000/api/cep/:cep
 
-### Passo 6: Rodando Testes
+### Passo 5: Rodando Testes
 ```bash
 npm test
 ```
