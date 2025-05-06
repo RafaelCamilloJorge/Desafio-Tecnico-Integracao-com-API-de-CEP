@@ -36,7 +36,7 @@ npm install
 
 ### Passo 3: Rodando o Projeto com Docker
 ```bash
-docker-compose up --build
+npm run start:dev
 ```
 
 ### Passo 4: Rodando Localmente
