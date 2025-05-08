@@ -33,6 +33,7 @@ cd Desafio-Tecnico-Integracao-com-API-de-CEP
 ```bash
 npm install
 ```
+Criar o arquivo .env utilizando como base o .env.exemple
 
 ### Passo 3: Rodando o Projeto com Docker
 ```bash
