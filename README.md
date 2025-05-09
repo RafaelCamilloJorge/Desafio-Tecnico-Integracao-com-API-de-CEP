@@ -63,3 +63,33 @@ npm test
 ├── package.json # Dependências e scripts do projeto  
 ├── tsconfig.json # Configurações do TypeScript  
 └── .gitignore # Arquivo de exclusão de arquivos do Git  
+
+### Principais Rotas
+# Criar um novo CEP (consome a API ViaCEP e salva no banco)
+POST /cep
+Body:
+{
+  "cep": "01001000"
+}
+
+# Buscar um CEP específico
+GET /cep/:cep
+
+# Atualizar um CEP manualmente
+PUT /cep/:cep
+Body:
+{
+  "logradouro": "Praça da Sé",
+  "bairro": "Sé",
+  "localidade": "São Paulo",
+  "uf": "SP"
+}
+
+# Adicionar um CEP aos favoritos
+POST /cep/:cep/favorite
+
+# Remover um CEP dos favoritos
+DELETE /cep/:cep/favorite
+
+# Listar todos os CEPs salvos
+GET /ceps
