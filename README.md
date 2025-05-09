@@ -66,17 +66,17 @@ npm test
 
 ### Principais Rotas
 #### Criar um novo CEP (consome a API ViaCEP e salva no banco)
-POST /cep
+POST api/cep
 Body:
 {
   "cep": "01001000"
 }
 
 #### Buscar um CEP específico
-GET /cep/:cep
+GET api/cep/:cep
 
 #### Atualizar um CEP manualmente
-PUT /cep/:cep
+PUT api/cep/:cep
 Body:
 {
   "logradouro": "Praça da Sé",
@@ -86,10 +86,10 @@ Body:
 }
 
 #### Adicionar um CEP aos favoritos
-POST /cep/:cep/favorite
+POST api/cep/:cep/favorite
 
 #### Remover um CEP dos favoritos
-DELETE /cep/:cep/favorite
+DELETE api/cep/:cep/favorite
 
 #### Listar todos os CEPs salvos
-GET /ceps
+GET api/ceps
