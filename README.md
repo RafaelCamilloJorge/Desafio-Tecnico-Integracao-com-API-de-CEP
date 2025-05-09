@@ -65,17 +65,17 @@ npm test
 └── .gitignore # Arquivo de exclusão de arquivos do Git  
 
 ### Principais Rotas
-# Criar um novo CEP (consome a API ViaCEP e salva no banco)
+#### Criar um novo CEP (consome a API ViaCEP e salva no banco)
 POST /cep
 Body:
 {
   "cep": "01001000"
 }
 
-# Buscar um CEP específico
+#### Buscar um CEP específico
 GET /cep/:cep
 
-# Atualizar um CEP manualmente
+#### Atualizar um CEP manualmente
 PUT /cep/:cep
 Body:
 {
@@ -85,11 +85,11 @@ Body:
   "uf": "SP"
 }
 
-# Adicionar um CEP aos favoritos
+#### Adicionar um CEP aos favoritos
 POST /cep/:cep/favorite
 
-# Remover um CEP dos favoritos
+#### Remover um CEP dos favoritos
 DELETE /cep/:cep/favorite
 
-# Listar todos os CEPs salvos
+#### Listar todos os CEPs salvos
 GET /ceps
